@@ -2,10 +2,22 @@
 
 <body>
 
-    <form method="POST" action = "/add-user">
-        <label for="user">Enter User</label>
-            <input type="text" name="user" id="user">
+    <form method="POST" action = "/">
+        <label for="username">Enter User</label>
+            <input type="text" name="username" id="username">
             <button class="button" type="submit">Add User</button>
     </form>
+    <div class="userDisplay">
+        <ul>
+        <% if (userList.length > 0) { %>
+        <% for (let user of userList) { %>
+        <li><%= user.username %></li>
+        <% } 
+        }
+        else { %>
+            <li>No Names to Display</li>
+            <% } %>
+        </ul>
+    </div>
 
 <%- include('includes/end.ejs') %>
