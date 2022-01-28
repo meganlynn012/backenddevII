@@ -1,27 +1,23 @@
 {
-  "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.2",
-    "nodemon": "^2.0.15"
-  },
-  "name": "backenddevii",
+  "name": "nodejs-complete-guide",
   "version": "1.0.0",
-  "description": "backend-ii course",
-  "main": "index.js",
-  "devDependencies": {},
+  "description": "Complete Node.js Guide",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
     "start-server": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/meganlynn012/backenddevII.git"
-  },
-  "author": "Megan Shaw",
+  "author": "Maximilian Schwarzmüller",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/meganlynn012/backenddevII/issues"
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   },
-  "homepage": "https://github.com/meganlynn012/backenddevII#readme"
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "ejs": "^2.7.4",
+    "express": "^4.17.2",
+    "express-handlebars": "^3.0.0",
+    "pug": "^2.0.3"
+  }
 }
