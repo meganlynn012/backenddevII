@@ -15,7 +15,6 @@ router.get('/products', adminController.getProducts);
 // /admin/add-product => POST
 router.post('/add-product', adminController.postAddProduct);
 
-//the :productId passes the current product Id to the controller to use to show the edit page.
 router.get('/edit-product/:productId', adminController.getEditProduct);
 
 router.post('/edit-product', adminController.postEditProduct);
